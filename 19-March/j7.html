@@ -1,0 +1,50 @@
+<!-- Consider below JSON Object and fetch value using for in and for of loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj=
+        {
+            "FSD":
+            [
+
+                {
+                    "Topic":"HTML",
+                    "course":"beginner",
+                    "content":["table","tags"]
+                },
+
+                {
+                    "Topic":"CSS",
+                    "course":"beginner",
+                    "content":["color","property"]
+                }
+
+            ]
+        }
+
+        for (x1 of obj.FSD) 
+        {
+            document.write(x1.Topic+"<br>");
+            document.write(x1.course+"<br>");
+            document.write(x1.content+"<br><br>");
+        }
+
+        // Second way
+
+        for(x in obj.FSD)
+        {
+            for(y in obj.FSD[x])
+            {
+                document.write(obj.FSD[x][y]+"<br>")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- 
+ Write JSON Object which contains Array of 3 object , each object contains 2 property: name,age.
+ Now arrange array values by age in descending order. Print name & age in terminal as per new data 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student=
+        [
+            {
+                "name":"abc",
+                "age":20
+            },
+            {
+                "name":"pqr",
+                "age":16
+            },
+            {
+                "name":"def",
+                "age":19
+            },
+        ]
+
+
+        // console.log(student.sort((a, b) => b.age - a.age));
+        console.log(student.sort((a, b) => a.age - b.age));
+        
+    </script>
+</body>
+</html>

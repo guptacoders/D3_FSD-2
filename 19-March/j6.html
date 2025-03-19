@@ -1,0 +1,34 @@
+<!-- Write one JSON String with date property name and age and while clicking on button
+  print date in Indian STD Time -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const obj=
+        `{
+            "name":"abc",
+            "age":20,
+            "dob":"2005-10-18"        
+         }`;
+
+         const obj1=JSON.parse(obj);
+         console.log(obj1.dob);
+
+         
+
+         function f1()
+         {
+            a=new Date(obj1.dob);
+            alert(a)
+         }
+    </script>
+</head>
+<body>
+   <input type="button" value="Show" onclick="f1()">
+</body>
+</html>

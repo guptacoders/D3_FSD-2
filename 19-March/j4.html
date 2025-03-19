@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        obj=`
+        {
+            "var1":"LJ",
+            "var2":"University"
+        }
+        `;
+        //obj is JSON String
+        console.log(obj);
+        console.log(obj.var1);  // Undefined 
+
+        obj1=JSON.parse(obj);  // Converts String to JSON Object
+
+        console.log(obj1.var1);
+
+        obj2=JSON.stringify(obj1);  //Converts JSON Object to String
+        console.log(obj2)
+        
+    </script>
+</body>
+</html>

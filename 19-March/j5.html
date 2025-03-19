@@ -1,0 +1,26 @@
+<!-- Write one JSON String with date property name and age and print date in Indian STD Time -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj=
+        `{
+            "name":"abc",
+            "age":20,
+            "dob":"2005-10-18"        
+         }`;
+
+         const obj1=JSON.parse(obj);
+         console.log(obj1.dob);
+
+         a=new Date(obj1.dob);
+         console.log(a)
+    </script>
+</body>
+</html>
