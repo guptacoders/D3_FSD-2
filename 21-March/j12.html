@@ -1,0 +1,39 @@
+<!-- Write a script to define 2 JSON object named as Div1 & Div2 having an array to store name of the
+     students. This name should be arranged in ascending order and display it on console. and also
+     Combine both data and sort them accordingly. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data=
+        {
+            "div1":
+            {
+                name:["Ishan","Neel","Ajay","Zaa"],
+            },
+            "div2":
+            {
+                name:["Tirth","Sachin","Raj","Abhishek"]
+            }
+        }
+
+        d1_sorted=data.div1.name.sort();
+        d2_sorted=data.div2.name.sort();
+
+        console.log("Div1 Students:", data.div1.name);
+        console.log("Div2 Students:", data.div2.name);
+
+        // Concated Data
+
+        combined=d1_sorted.concat(d2_sorted).sort();
+        console.log("Combined Students:", combined)
+
+    </script>
+</body>
+</html>

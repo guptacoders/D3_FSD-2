@@ -1,0 +1,42 @@
+<!--Write JS to store an array of object having height and name . Display highest height  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array=
+    [
+        {
+            name: "John",
+            height: 5.7
+        },
+
+        {
+            name: "Neel",
+            height: 6
+        },
+
+        {
+            name: "Ishan",
+            height: 6.2
+        }
+    ]
+
+    
+    var sortedArray = array.sort((a, b)=>  b.height - a.height); //Descending Order Sorting
+    
+    for(person of sortedArray)
+    {
+        console.log(`${person.name}:${person.height}`)
+        break;
+    }
+
+
+    </script>
+</body>
+</html>
