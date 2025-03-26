@@ -1,0 +1,43 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="blank">Hello</p>
+    <input type="submit" value="Increase" onclick="fun1()"/>
+    <input type="submit" value="Decrease" onclick="fun2()"/>
+
+    <script>
+        var font=15;
+
+        function f1(font)
+        {
+            document.getElementById("blank").style.fontSize=font+"px";
+        }
+
+        function fun1()
+        {
+            setInterval(function(){
+                if(font<=50){
+                    f1(font++);
+                }
+            },1000);
+        }
+
+        function fun2()
+        {
+            setInterval(function()
+            {
+                if(font>=20)
+                {
+                    f1(font--);
+                }
+            },1000);
+        }
+    </script>
+ </body>
+ </html>

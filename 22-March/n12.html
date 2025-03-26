@@ -1,0 +1,29 @@
+<!-- Write Addition of 2 numbers on browser using callback function  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="blank"></p>
+    <script>
+        
+       function f1(sum)
+       {
+        document.getElementById("blank").innerHTML="<br>"+sum+"<br>";
+       }
+
+       function call(a,b,mycall)
+       {
+        sum=a+b;
+        mycall(sum);
+       }
+
+       call(10,20,call);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- Write Code to increase the font size at interval of 1000ms and it should stop increasing when the font size reach 250px.
+ This task should be done while clicking on increase button Default font size should be 15 px-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="blank">Hello</p>
+    <input type="submit" value="Increase" onclick="fun1()"/>
+
+    <script>
+        var font=15;
+
+        function f1(font)
+        {
+            document.getElementById("blank").style.fontSize=font+"px";
+        }
+
+        function fun1()
+        {
+            setInterval(function(){
+                if(font<=50){
+                    f1(font++);
+                }
+            },1000);
+        }
+    </script>
+ </body>
+ </html>

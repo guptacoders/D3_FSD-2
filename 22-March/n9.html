@@ -1,0 +1,26 @@
+<!-- Initialize 2 variables and increament both the variables display the addition of both variables at interval of 1 sec  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=1;
+        var b=2;
+
+        function f1()
+        {
+            a++;
+            b++;
+            sum=a+b;
+            document.write(sum+" ");
+        }
+
+        setInterval(f1,3000);
+    </script>
+</body>
+</html>
