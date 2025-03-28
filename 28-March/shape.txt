@@ -1,0 +1,3 @@
+[{"shape":"rectangle","side":30},{"shape":"circle","radius":10}]
+ Perimeter Of Rectangle: 120
+Perimeter Of Circle: 62.83185307179586
